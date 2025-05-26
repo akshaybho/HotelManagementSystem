@@ -84,7 +84,7 @@ public class Login extends JFrame implements ActionListener {
                 String user = tf1.getText();
                 String pass = jp1.getText();
 
-                String q = "SELECT *FROM login WHERE username = '"+user+"' and password = '"+pass+"'";
+                String q = "SELECT *FROM Users WHERE username = '"+user+"' and password = '"+pass+"'";
                 ResultSet rs = c.statement.executeQuery(q);
 
                 if(rs.next())
